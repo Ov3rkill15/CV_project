@@ -78,6 +78,34 @@
 .project-card a:hover {
   color: #1f6feb;
 }
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #21262d;
+  transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.03);
+}
+.project-card img {
+  width: 100%;         /* biar responsif mengikuti lebar card */
+  max-width: 600px;    /* batas maksimal lebarnya */
+  height: 400px;       /* tinggi tetap */
+  object-fit: cover;   /* potong gambar biar tetap proporsional */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #21262d;
+  transition: transform 0.3s ease;
+}
+@media (max-width: 768px) {
+  .project-card img {
+    height: 250px;
+  }
+}
 
 /* ------------------ RESET DASAR ------------------ */
 * {
