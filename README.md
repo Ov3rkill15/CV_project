@@ -11,7 +11,7 @@ Website ini dibuat menggunakan **HTML5 + CSS3**, dengan tampilan yang *clean, re
 ---
 
 ## 🌐 Live Preview
-**👉 [cv-project.vercel.app](https://cv-project.vercel.app)**  
+**👉 [cv-project.vercel.app]([https://cv-project.vercel.app](https://cv-project-mocha.vercel.app/))**  
 Buka link di atas untuk melihat website versi live yang di-deploy otomatis melalui GitHub dan Vercel.
 
 ---
