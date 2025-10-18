@@ -67,5 +67,17 @@
   <footer>
     <p>© 2025 Muhamad Alwan Suryadi</p>
   </footer>
+    <script>
+    const sections = document.querySelectorAll('section');
+    const revealSection = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < triggerBottom) sec.classList.add('show');
+      });
+    };
+    window.addEventListener('scroll', revealSection);
+    revealSection();
+  </script>
 </body>
 </html>

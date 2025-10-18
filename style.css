@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+/* ------------------ RESET DASAR ------------------ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ------------------ BODY ------------------ */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #0d1117;
@@ -13,6 +15,7 @@ body {
   line-height: 1.6;
 }
 
+/* ------------------ HEADER ------------------ */
 header {
   text-align: center;
   padding: 60px 20px;
@@ -29,6 +32,7 @@ header p {
   color: #8b949e;
 }
 
+/* ------------------ LINK SOSIAL ------------------ */
 .socials {
   margin-top: 20px;
 }
@@ -42,11 +46,21 @@ header p {
 
 .socials a:hover {
   color: #1f6feb;
+  text-shadow: 0 0 5px #58a6ff;
 }
 
+/* ------------------ SECTION UMUM ------------------ */
 section {
   padding: 50px 15%;
   border-bottom: 1px solid #21262d;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease-out;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 section h2 {
@@ -54,6 +68,7 @@ section h2 {
   margin-bottom: 20px;
 }
 
+/* ------------------ LIST ------------------ */
 ul {
   list-style: none;
   padding-left: 0;
@@ -61,12 +76,19 @@ ul {
 
 li {
   margin-bottom: 8px;
+  transition: color 0.3s;
 }
 
+li:hover {
+  color: #58a6ff;
+}
+
+/* ------------------ PENGALAMAN ------------------ */
 .exp-item {
   margin-bottom: 25px;
 }
 
+/* ------------------ FOOTER ------------------ */
 footer {
   text-align: center;
   padding: 30px;
@@ -74,6 +96,7 @@ footer {
   border-top: 1px solid #21262d;
 }
 
+/* ------------------ RESPONSIVE ------------------ */
 @media (max-width: 768px) {
   section {
     padding: 40px 8%;
@@ -82,4 +105,9 @@ footer {
   header h1 {
     font-size: 2rem;
   }
+}
+
+/* ------------------ SMOOTH SCROLL ------------------ */
+html {
+  scroll-behavior: smooth;
 }
