@@ -567,8 +567,7 @@ body.light-mode .light-lines {
   }
 
   .light-mode section {
-      border-bottom: none;
-      background: linear-gradient(180deg, #f5f5f5 0%, #ffffff 100%);
+    border-bottom: 1px solid #d0d7de;
   }
 
   .light-mode footer {
