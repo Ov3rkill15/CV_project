@@ -908,3 +908,9 @@ body.light-mode .code-block {
 body.light-mode .keyword { color: #d73a49; }
 body.light-mode .type { color: #005cc5; }
 body.light-mode .comment { color: #6a737d; }
+
+/* OVERRIDE: Membuat Portfolio Grid Kembali Normal */
+#portfolio .project-grid {
+    /* Mengabaikan Bento Grid dan kembali ke grid responsive normal */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+}
