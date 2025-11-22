@@ -116,14 +116,35 @@
   <h2>Portfolio</h2>
 
   <div class="project-grid">
+    
+    <div class="project-card">
+      <img src="https://cryptologos.cc/logos/sui-sui-logo.png?v=035" alt="Sui Supply Chain" style="object-fit: contain; padding: 20px; background: #0d1117;">
+      <h3>📦 Sui Supply Chain dApp</h3>
+      <p>
+        Aplikasi terdesentralisasi (dApp) untuk pelacakan produk yang transparan dan <em>immutable</em>. 
+        Dibangun di atas <strong>Sui Network</strong> memanfaatkan fitur <em>Object-Centric</em> dari bahasa Move.
+        Memungkinkan <em>minting</em> produk, transfer kepemilikan, dan pelacakan status on-chain.
+      </p>
+      <div class="tech-badges">
+        <span>Sui Move</span>
+        <span>Smart Contract</span>
+        <span>Blockchain</span>
+      </div>
+      <a href="https://github.com/Ov3rkill15/sui-supply-chain-dapp" target="_blank">Lihat Source Code 🚀</a>
+    </div>
+
     <div class="project-card">
       <img src="assets/alpro.jpg" alt="Preview Project Alpro">
       <h3>Aplikasi Tugas Besar Alpro</h3>
       <p>
         Program belajar interaktif berbasis Golang dengan fitur navigasi materi, soal latihan, 
-        serta sistem evaluasi otomatis menggunakan test case. 
-        Dibuat untuk meningkatkan pengalaman belajar algoritma pemrograman secara mandiri.
+        serta sistem evaluasi otomatis menggunakan test case.
       </p>
+      <div class="tech-badges">
+        <span>Golang</span>
+        <span>CLI</span>
+        <span>Education</span>
+      </div>
       <a href="https://github.com/Ov3rkill15/Project-Alpro" target="_blank">Lihat di GitHub</a>
     </div>
 
@@ -131,10 +152,38 @@
       <img src="assets/cp.jpg" alt="Competitive Programming Preview">
       <h3>Competitive Programming Journey</h3>
       <p>
-        Dokumentasi perjalanan saya belajar algoritma dan struktur data melalui kompetisi seperti 
-        Gemastik dan Hology. Berisi kumpulan problem, analisis solusi, dan refleksi peningkatan logika.
+        Dokumentasi perjalanan belajar algoritma dan struktur data (Gemastik & Hology). 
+        Berisi analisis solusi untuk efisiensi logika.
       </p>
+      <div class="tech-badges">
+        <span>C++</span>
+        <span>Algorithms</span>
+        <span>Data Structures</span>
+      </div>
       <a href="https://github.com/Ov3rkill15/Competitive-Programming" target="_blank">Lihat di GitHub</a>
+    </div>
+  </div>
+
+  <div class="code-showcase">
+    <h3>💻 Smart Contract Snippet</h3>
+    <p style="text-align: center; margin-bottom: 15px; color: #8b949e;">Potongan kode Move untuk struktur data Produk (On-Chain Object)</p>
+    
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="file-name">supply_chain.move</span>
+      </div>
+      <pre class="code-block">
+<span class="keyword">public struct</span> Product <span class="keyword">has</span> key, store {
+    id: UID,
+    name: String,
+    description: String,
+    current_owner: <span class="type">address</span>,
+    status: <span class="type">u8</span>, <span class="comment">// 0: Created, 1: Shipped, 2: Delivered</span>
+    created_at: <span class="type">u64</span>
+}</pre>
     </div>
   </div>
 </section>

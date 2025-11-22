@@ -803,3 +803,108 @@ body.light-mode .light-lines {
     body.light-mode .theme-toggle-wrapper::before {
       background: rgba(0, 0, 0, 0.7);
     }
+
+    /* ------------------ TECH BADGES (NEW) ------------------ */
+.tech-badges {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.tech-badges span {
+  background-color: rgba(88, 166, 255, 0.15);
+  color: #58a6ff;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(88, 166, 255, 0.3);
+  font-weight: 500;
+}
+
+/* ------------------ CODE SHOWCASE (NEW) ------------------ */
+.code-showcase {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.terminal-window {
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.terminal-window:hover {
+  transform: scale(1.02);
+  border-color: #58a6ff;
+}
+
+.terminal-header {
+  background-color: #161b22;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #30363d;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.dot.red { background-color: #ff5f56; }
+.dot.yellow { background-color: #ffbd2e; }
+.dot.green { background-color: #27c93f; }
+
+.file-name {
+  margin-left: 10px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #8b949e;
+}
+
+.code-block {
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  color: #c9d1d9;
+  text-align: left;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+/* Syntax Highlighting Manual */
+.keyword { color: #ff7b72; font-weight: bold; } /* Pink/Red for keywords */
+.type { color: #79c0ff; } /* Blue for types */
+.comment { color: #8b949e; font-style: italic; } /* Gray for comments */
+
+/* Light Mode Adjustment for Code Snippet */
+body.light-mode .terminal-window {
+  background-color: #ffffff;
+  border-color: #d0d7de;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+body.light-mode .terminal-header {
+  background-color: #f6f8fa;
+  border-bottom-color: #d0d7de;
+}
+
+body.light-mode .code-block {
+  color: #24292e;
+}
+
+body.light-mode .keyword { color: #d73a49; }
+body.light-mode .type { color: #005cc5; }
+body.light-mode .comment { color: #6a737d; }
